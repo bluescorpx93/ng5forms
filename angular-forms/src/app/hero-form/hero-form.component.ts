@@ -23,6 +23,10 @@ export class HeroFormComponent implements OnInit {
 	ngOnInit() {
 	}
 
+	newHero(){
+		this.myModel = new Hero(42, '', '');
+	}
+
 	get diagnostic(){ return JSON.stringify(this.myModel)}
 
 }
